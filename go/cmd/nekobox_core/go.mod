@@ -17,7 +17,7 @@ require (
 	grpc_server v1.0.0
 )
 
-replace github.com/sagernet/sing-box => github.com/Mahdi-zarei/sing-box v1.3.5-0.20241122200147-526a1b4dbb34
+replace github.com/sagernet/sing-box => github.com/Mahdi-zarei/sing-box a631eb4a15cf
 
 replace github.com/sagernet/sing-dns => github.com/Mahdi-zarei/sing-dns v0.3.0-beta.14.0.20241016191038-09d232d0a8a9
 
