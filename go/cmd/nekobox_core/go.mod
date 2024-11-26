@@ -10,7 +10,7 @@ require (
 	github.com/sagernet/sing v0.5.1
 	github.com/sagernet/sing-box v1.10.2
 	github.com/sagernet/sing-dns v0.3.0
-	github.com/sagernet/sing-tun v0.4.1
+	github.com/sagernet/sing-tun v0.4.2
 	github.com/spf13/cobra v1.8.1
 	golang.org/x/sys v0.27.0
 	golang.zx2c4.com/wireguard/wgctrl v0.0.0-20230429144221-925a1e7659e6
@@ -64,7 +64,7 @@ require (
 	github.com/sagernet/cloudflare-tls v0.0.0-20231208171750-a4483c1b7cd1 // indirect
 	github.com/sagernet/cors v1.2.1 // indirect
 	github.com/sagernet/fswatch v0.1.1 // indirect
-	github.com/sagernet/gvisor v0.0.0-20241021032506-a4324256e4a3 // indirect
+	github.com/sagernet/gvisor v0.0.0-20241123041152-536d05261cff // indirect
 	github.com/sagernet/netlink v0.0.0-20240612041022-b9a21c07ac6a // indirect
 	github.com/sagernet/nftables v0.3.0-beta.4 // indirect
 	github.com/sagernet/quic-go v0.48.1-beta.1 // indirect
