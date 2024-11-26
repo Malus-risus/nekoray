@@ -32,7 +32,7 @@ jobs:
         run: git ls-files go | xargs cat | sha1sum > go_status
       - name: Cache Common Download
         id: cache-common
-        uses: actions/cache@v4.0.2
+        uses: actions/cache@v4.1.2
         with:
           path: artifacts.tgz
           key: CommonCache-${{ matrix.cross_os }}-${{ matrix.cross_arch }}-${{ hashFiles('libs/*.sh', 'go_status', '*.txt') }}
@@ -109,7 +109,7 @@ jobs:
         uses: seanmiddleditch/gha-setup-ninja@v5
       - name: Cache Download
         id: cache-deps
-        uses: actions/cache@v4.0.2
+        uses: actions/cache@v4.1.2
         with:
           path: libs/deps
           key: DepsCache-${{ matrix.platform }}-${{ matrix.target }}-${{ hashFiles('libs/build_deps_*.sh') }}-Qt${{ matrix.qt_version }}
