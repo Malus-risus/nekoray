@@ -2116,6 +2116,8 @@ github.com/lyft/protoc-gen-star/v2 v2.0.1/go.mod h1:RcCdONR2ScXaYnQC5tUzxzlpA3WV
 github.com/lyft/protoc-gen-star/v2 v2.0.3/go.mod h1:amey7yeodaJhXSbf/TlLvWiqQfLOSpEk//mLlc+axEk=
 github.com/matsuridayo/libneko v0.0.0-20230913024055-5277a5bfc889 h1:HYvlSEROmL+NDSsOPDL0A/foFjLis29xAcysegJdLPs=
 github.com/matsuridayo/libneko v0.0.0-20230913024055-5277a5bfc889/go.mod h1:IRO07Queptz/rGFvEW+3Hmwpx7MCup6WiDs4p5jMt4g=
+github.com/matsuridayo/libneko v0.0.0-20240702024904-1c47a3af7199 h1:zv8GdEqhTXnn52/svG9i3aQxAXRLxXK97gZpHoNUUYM=
+github.com/matsuridayo/libneko v0.0.0-20240702024904-1c47a3af7199/go.mod h1:IRO07Queptz/rGFvEW+3Hmwpx7MCup6WiDs4p5jMt4g=
 github.com/mattn/go-colorable v0.1.8/go.mod h1:u6P/XSegPjTcexA+o6vUJrdnUu04hMope9wVRipJSqc=
 github.com/mattn/go-colorable v0.1.9/go.mod h1:u6P/XSegPjTcexA+o6vUJrdnUu04hMope9wVRipJSqc=
 github.com/mattn/go-colorable v0.1.13/go.mod h1:7S9/ev0klgBDR4GtXTXX8a3vIGJpMovkB8vQcUbaXHg=
