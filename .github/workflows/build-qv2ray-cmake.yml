@@ -57,7 +57,7 @@ jobs:
         if: steps.cache-common.outputs.cache-hit != 'true'
         run: tar czvf artifacts.tgz ./deployment
       - name: Uploading Artifact
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: NekoRay-${{ github.sha }}-Common-${{ matrix.cross_os }}-${{ matrix.cross_arch }}
           path: artifacts.tgz
@@ -157,7 +157,7 @@ jobs:
         shell: bash
         run: tar czvf artifacts.tgz ./deployment
       - name: Uploading Artifact
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: NekoRay-${{ github.sha }}-${{ matrix.platform }}-${{ matrix.target }}-Qt${{ matrix.qt_version }}
           path: artifacts.tgz
@@ -218,7 +218,7 @@ jobs:
           rm -rf public_res
           rm -rf *.pdb
       - name: Uploading Artifact
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: Deployment-${{ github.sha }}
           path: deployment
