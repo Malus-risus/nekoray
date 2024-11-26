@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/dustin/go-humanize v1.0.1
 	github.com/gofrs/uuid/v5 v5.3.0
-	github.com/matsuridayo/libneko v0.0.0-20230913024055-5277a5bfc889
+	github.com/matsuridayo/libneko v0.0.0-20240702024904-1c47a3af7199
 	github.com/oschwald/maxminddb-golang v1.13.1
 	github.com/sagernet/sing v0.5.1
 	github.com/sagernet/sing-box v1.10.2
