@@ -14,7 +14,7 @@ require (
 	github.com/sagernet/sing-tun v0.6.9
 	github.com/spf13/cobra v1.9.1
 	golang.org/x/sys v0.34.0
-	google.golang.org/grpc v1.73.0
+	google.golang.org/grpc v1.74.2
 )
 
 replace github.com/sagernet/sing-box => github.com/throneproj/sing-box v1.11.16-0.20250718050551-8b8dd68c0722
