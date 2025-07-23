@@ -54,6 +54,8 @@ jobs:
             core/server/go.sum
             core/updater/go.sum
       - name: Install Protoc
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
         uses: arduino/setup-protoc@v3
       - name: Installing protoc-gen-go
         run: |
