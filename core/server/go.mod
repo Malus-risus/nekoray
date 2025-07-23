@@ -18,7 +18,7 @@ require (
 	google.golang.org/protobuf v1.36.6
 )
 
-replace github.com/sagernet/sing-box => github.com/throneproj/sing-box v1.11.16-0.20250718050551-8b8dd68c0722
+replace github.com/sagernet/sing-box => github.com/Mahdi-zarei/sing-box v1.3.5-0.20250701215754-027a41f0810f
 
 replace github.com/sagernet/sing-dns => github.com/Mahdi-zarei/sing-dns v0.3.0-beta.14.0.20250507225909-53baf4f30fa3
 
@@ -93,5 +93,6 @@ require (
 	golang.org/x/tools v0.28.0 // indirect
 	golang.zx2c4.com/wintun v0.0.0-20230126152724-0fa3db229ce2 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250324211829-b45e905df463 // indirect
+	google.golang.org/protobuf v1.36.6 // indirect
 	lukechampine.com/blake3 v1.3.0 // indirect
 )
