@@ -17,7 +17,7 @@ require (
 	google.golang.org/grpc v1.73.0
 )
 
-replace github.com/sagernet/sing-box => github.com/throneproj/sing-box v1.11.16-0.20250718050551-8b8dd68c0722
+replace github.com/sagernet/sing-box => github.com/throneproj/sing-box v1.12.0-beta.33
 
 replace github.com/sagernet/sing-dns => github.com/Mahdi-zarei/sing-dns v0.3.0-beta.14.0.20250507225909-53baf4f30fa3
 
