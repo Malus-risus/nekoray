@@ -5,7 +5,6 @@ import (
 	tun "github.com/sagernet/sing-tun"
 	"github.com/sagernet/sing/common/control"
 	logger2 "github.com/sagernet/sing/common/logger"
-	"log"
 	"nekobox_core/internal/boxdns/winipcfg"
 )
 
@@ -73,7 +72,8 @@ func getFirstDNS(luid winipcfg.LUID) string {
 }
 
 func getNameServersForInterface(luid winipcfg.LUID) ([]string, error) {
-	nameservers := make([]string, 0, 4)
+	nameserversV4 := make([]string, 0, 4)
+	nameserversV6 := make([]string, 0, 4)
 	nsAddrs, err := luid.DNS()
 	if err != nil {
 		return nil, err
@@ -84,16 +84,25 @@ func getNameServersForInterface(luid winipcfg.LUID) ([]string, error) {
 			isSystemDNSAltered = true
 		}
 		if server.IsValid() && server.String() != setMarkAddr && server.String() != dhcpMarkAddr {
-			nameservers = append(nameservers, server.String())
+			if server.Is4() {
+				nameserversV4 = append(nameserversV4, server.String())
+			} else {
+				nameserversV6 = append(nameserversV6, server.String())
+			}
 		}
 	}
-	if isSystemDNSAltered && len(nameservers) > 0 && nameservers[0] == "127.0.0.1" {
-		nameservers = nameservers[1:]
+	if isSystemDNSAltered && len(nameserversV4) > 0 && nameserversV4[0] == "127.0.0.1" {
+		nameserversV4 = nameserversV4[1:]
 	}
 
-	if len(nameservers) == 0 {
-		log.Println("getNameServersForInterface: no nameservers found")
+	if len(nameserversV4) > 0 {
+		return nameserversV4, nil
 	}
 
-	return nameservers, nil
+	if len(nameserversV6) > 0 {
+		return nameserversV6, nil
+	}
+
+	log.Println("getNameServersForInterface: no nameservers found")
+	return nil, nil
 }
