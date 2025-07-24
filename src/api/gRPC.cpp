@@ -436,7 +436,7 @@ namespace NekoGui_rpc {
         {
             resp = spb::pb::deserialize< libcore::IsPrivilegedResponse >( rsp );
             *rpcOK = true;
-            return resp.has_privilege.value();
+            return resp.has_privilege;
         } else
         {
             NOT_OK
