@@ -792,7 +792,7 @@ void MainWindow::prepare_exit()
     //
     if (running) running->Save();
     NekoGui::dataStore->save_control_no_save = true; // don't change datastore after this line
-    NekoGui_rpc::defaultClient->Exit();
+    core_process->Kill();
     mu_exit.unlock();
     qDebug() << "prepare exit done!";
 }
